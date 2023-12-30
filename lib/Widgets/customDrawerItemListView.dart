@@ -28,17 +28,18 @@ class _CustomDrawerItemListViewState extends State<CustomDrawerItemListView> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
+    return SliverList.builder(
       itemCount: items.length,
       itemBuilder: (context, index) {
         return GestureDetector(
           onTap: () {
             if (activeIndex != index) {
-              setState(() {
-                activeIndex = index;
-              });
+              setState(
+                () {
+                  activeIndex = index;
+                  print(activeIndex);
+                },
+              );
             }
           },
           child: Padding(
