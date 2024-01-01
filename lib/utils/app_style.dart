@@ -44,7 +44,7 @@ abstract class AppStyles {
     fontWeight: FontWeight.w400,
   );
   static const TextStyle styleSemiBold24 = TextStyle(
-    color: Color(0xff064060),
+    color: Color(0xff4eb7f2),
     fontSize: 24,
     fontFamily: 'Montserrat',
     fontWeight: FontWeight.w600,
